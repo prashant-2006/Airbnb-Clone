@@ -1,12 +1,13 @@
 import React from "react";
 import { FaSearch, FaBars, FaUser, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import myImage from './assets/logo.png';
 
 const Header3 = () => {
   return (
     <header className="lg:flex lg:justify-between lg:items-center lg:p-4 lg:shadow-md lg:bg-white lg:sticky lg:top-0 lg:z-50 lg:w-full hidden">
       {/* Logo */}
-      <Link to="/"><img src="/images/logo.png" alt="Airbnb Logo" className="h-10" /></Link>
+      <Link to="/"><img src={myImage} alt="Airbnb Logo" className="h-10" /></Link>
 
       {/* Search Bar */}
       <div className="flex items-center border px-4 py-2 rounded-full shadow-sm w-full max-w-md justify-between">
