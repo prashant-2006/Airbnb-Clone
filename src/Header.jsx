@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { useRef } from "react";
 import { useEffect } from "react";
+import myImage from './assets/logo.png';
 
 function Header(prop){
   const [date1, setDate1] = useState('');
@@ -61,7 +62,7 @@ function Header(prop){
         <div className='lg:flex lg:flex-col lg:w-full lg:justify-center lg:items-center lg:gap-4 lg:pb-8  hidden'>
         <div className='flex flex-col w-full'>
           <div className='flex items-center justify-between mx-16 mt-4'>
-            <img src="https://banner2.cleanpng.com/20180608/elx/aa80loyez.webp" alt="logo" className='h-[50] w-32'/>
+            <img src={myImage} alt="logo" className='h-[50] w-32'/>
             <div className='flex flex-row font-semibold text-lg'>
               <p className={`h-12 w-auto rounded-full ${prop.stay ? 'hover:bg-stone-200':'text-stone-500'} hover:cursor-pointer flex items-center px-4 transition-all duration-300`} onClick={()=>prop.setStay(true)}>Stay</p>
               <p className={`h-12 w-auto rounded-full ${!prop.stay ? 'hover:bg-stone-200':'text-stone-500'} hover:cursor-pointer flex items-center px-4 transition-all duration-300`} onClick={()=>prop.setStay(false)}>Experiences</p>
