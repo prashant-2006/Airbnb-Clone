@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header3 = () => {
   return (
-    <header className="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50 w-full">
+    <header className="lg:flex lg:justify-between lg:items-center lg:p-4 lg:shadow-md lg:bg-white lg:sticky lg:top-0 lg:z-50 lg:w-full hidden">
       {/* Logo */}
       <Link to="/"><img src="/images/logo.png" alt="Airbnb Logo" className="h-10" /></Link>
 

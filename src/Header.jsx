@@ -122,7 +122,7 @@ function Header(prop){
               onChange={(e)=>setDate1(e.target.value)}
               className="w-10 p-2 border rounded-md mt-1 transition-all focus:border-rose-500 focus:ring focus:ring-rose-200 opacity-0 z-10 absolute pt-9 pr-2"
             />
-            <i className="fas fa-chevron-down mt-11 fixed"></i>
+            <i className="fas fa-chevron-down"></i>
           </div>
           </div>
           <div>
@@ -135,7 +135,7 @@ function Header(prop){
               onChange={(e)=>setDate2(e.target.value)}
               className="w-10 p-2 border rounded-md mt-1 transition-all focus:border-rose-500 focus:ring focus:ring-rose-200 opacity-0 z-10 absolute pt-9 pr-2"
             />
-            <i className="fas fa-chevron-down fixed mt-11"></i>
+            <i className="fas fa-chevron-down"></i>
           </div>
           </div>
           <div className="relative flex flex-row justify-center items-center">
